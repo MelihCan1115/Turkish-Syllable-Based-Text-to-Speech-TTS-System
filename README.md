@@ -1,7 +1,11 @@
-#🎤 Turkish TTS - Syllable-Based Text-to-Speech System / Türkçe TTS - Hecelere Dayalı Metin Okuma Sistemi
-# 
+🎤#Turkish TTS - Syllable-Based Text-to-Speech System / Türkçe TTS - Hecelere Dayalı Metin Okuma Sistemi
 ---
-## ENGLISH / 🇬🇧
+**Authors / Geliştiriciler**
+
+👤 Fatih Can GÖÇÜLÜ
+👤 Melih Can KÖK
+
+### ENGLISH / 🇬🇧
 ---
 ### 📖 Project Description
 
@@ -40,53 +44,40 @@ To demonstrate the fundamental principles of text-to-speech synthesis for the Tu
 - **Tkinter**: Graphical User Interface
 - **Threading**: Non-blocking audio synthesis
 
----
-
-
-## TÜRKÇE / 🇹🇷
+### TÜRKÇE / 🇹🇷
 ---
 ### 📖 Proje Açıklaması
 
-**3 Boyutlu Yazıcı Projesi**, geleneksel yöntemlerden ilham alınarak özel bir 3D yazıcı tasarlayıp üretmeyi hedefler. Proje, modern tasarım teknikleri, CNC hassas kontrolü ve PLA filament gibi çevre dostu malzemeleri içerir. Donanım ve yazılım entegrasyonu ile tam işlevsel ve verimli bir 3D baskı sistemi geliştirilmiştir. 🎨🖥️
+**Türkçe Metin Seslendirme (TTS) Sistemi**, Python ile geliştirilmiş, hece tabanlı ve kural temelli bir konuşma sentezleme uygulamasıdır.
+Sistem, Türkçe metni analiz ederek kelimeleri hecelerine ayırır ve önceden kaydedilmiş WAV ses dosyalarını sinyal işleme yöntemleriyle birleştirerek konuşma üretir.Proje, harici API veya derin öğrenme modelleri kullanmadan, **eğitsel ve araştırma odaklı bir TTS motoru** geliştirmeyi hedefler.🖥️
 
 **Amacı:**  
-Çevre dostu bir malzeme olan PLA’yı kullanarak yüksek hassasiyetli baskılar alabilen, kullanıcı dostu ve özelleştirilebilir bir 3 boyutlu yazıcı üretmek.
-
-## 🏆 Başarılar
-
-- **Belge Hakkında**  
-  2022-2023 Eğitim-Öğretim yılında düzenlenen **“Teknoloji Fakültesi Proje Sergisi ve Yarışması”** kapsamında, proje dalında Elektrik-Elektronik Mühendisliği alanında İkincilik Ödülü kazanılmıştır.  
-
-  🎉 **Ödülü Sunan**: Prof. Dr. Şakir TAŞDEMİR, Teknoloji Fakültesi Dekanı.
-
-- **Ödül Sertifikası**  
-  Resmi ödül sertifikası proje klasöründe `başarı_belgesi.pdf` altında yer almaktadır.
+Türkçe için metinden konuşma üretiminin temel prensiplerini, düşük sistem gereksinimleri ve şeffaf bir mimari ile ortaya koymak.
 
 ## 🌟 Ana Özellikler
 
-1. 🔗 **Hassas Mühendislik**  
-   - 5 step motor ile 3 eksenli CNC kontrol.  
-   - STL dosyalarını katmanlara ayırarak doğru ve detaylı baskılar.
+1. 🔤 **Türkçeye Özgü Heceleme**  
+   - Türkçe fonetik kurallarına uygun heceleme algoritması.
+   - Türkçe büyük/küçük harf dönüşümlerine özel işlem.
 
-2. 🌍 **Çevre Dostu Malzemeler**  
-   - Yeniden kullanılabilir termoplastik PLA filament.  
-   - Doğada çözünebilir ve sürdürülebilir üretim imkanı.
+2. 🎧 **Eklemeli Konuşma Sentezi**  
+   - WAV formatında hece veritabanı.  
+   - Eksik heceler için otomatik sessizlik atama.
 
-3. 🛠️ **Özelleştirilebilir Tasarım**  
-   - Modüler yazıcı şasisi.  
-   - Kullanıcı tarafından üretilebilen PLA destek parçaları.
+3. 🎚️ **Ses Sinyali İşleme**  
+   - Yeniden örnekleme tabanlı perde (pitch) ayarı.
+   - Hece geçişlerinde crossfade ile yumuşatma.
+   - Genlik normalizasyonu.
 
-4. 📱 **Yazılım Entegrasyonu**  
-   - Harici yazılım ile kolay kurulum ve kalibrasyon.  
-   - Hızlı ve kullanıcı dostu yazıcı yönetimi.
+4. 🖥️ **Grafiksel Kullanıcı Arayüzü**  
+   - Tkinter tabanlı masaüstü arayüz.
+   - Anlık log takibi ve örnek cümle desteği.
+   - Pitch ve çıktı dosyası kontrolü.
 
 ## 💻 Kullanılan Teknolojiler
 
-- **PLA Filament**: Çevre dostu ve yeniden kullanılabilir termoplastik malzeme.  
-- **Ramps 1.4 & Arduino Mega 2560**: Gelişmiş kontrol sistemleri.  
-- **CNC Hassas Kontrol**: Doğru çok eksenli hareket.  
-- **3D Yazıcı Yazılımı**: STL dosya dilimleme ve G-code üretimi.
-
-🤝 Teşekkür
-
-Danışmanımız **Hasan Hüseyin ÇEVİK**'e rehberliği için teşekkür ederiz. Ayrıca ailelerimize destekleri için minnettarız.
+- **NumPy**: Sayısal ses işleme
+- **wave**: WAV dosya okuma/yazma
+- **Python 3.x**: Ana programlama dili
+- **Threading**: Asenkron işlem yönetimi
+- **Tkinter**: Grafiksel kullanıcı arayüzü
